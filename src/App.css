@@ -1,38 +1,326 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes up at least the viewport height */
+
+  
+}
+
+header {
+  flex: 0 0 auto;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  flex-grow: 1;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+footer {
+  flex: 0 0 auto;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 0.5rem 1rem;
+}
+.custom-img{
+  min-height: 200px; /* Adjust the height as needed */
+  width: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  width: 286px;
+  height: 230px;
+}
+
+
+.photo-container {
+  background-image: url("photo1.jpg");
+ 
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+}
+
+
+.navbar-custom{
+  color:#ffa500;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: bold;
+  
+
+}
+.uppernavbar{
+  z-index: 1;
+  width: 100%;
+}
+.nav-link-custom{
+  color: #ffa500;
+  font-family: sans-serif;
+  font-size: 25px;
+  float: right;
+}
+
+
+@media (min-width: 768px) {
+  .photo-container {
+    height: 400px; 
+    width: 200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  
+@media (min-width: 576px) {
+  photo-container{
+    height: 300px; 
+    width: 100px;
+  }
+}
+
+
+.heading{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 70px;
+}
+
+#Choose_Your_Package{
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+
+.card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.card-container .card {
+  flex: 1;
+}
+
+.navbar{
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 0.5px solid orange;
+  position: sticky;
+  top:0
+}
+
+.custom-toggler {
+  background-color: orange; /* Change to your desired color */
+  border-color: orange; /* Change to your desired color */
+  color: white; /* Change to your desired text color */
+}
+
+#rooot {
+  flex: 1; /* Allow the content to grow to fill available space */
+  display: flex;
+  flex-direction: column;
+  
+  min-height: calc(100vh - 40px); /* Adjust as needed for padding and header/footer height */
+  
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+
+
+
+.form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-container{
+  height: 100%;
+  background-color: #152733;
+  overflow: hidden;
+}
+
+.form-outer-container{
+  height: 100%;
+  background-color: #54585a34;
+  overflow: hidden;
+}
+
+.form-content .form-items {
+    border: 3px solid #fff;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 600px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: #0c6dc2;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up{
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+
+
+.inp-field{
+    margin-bottom: 1.25rem;
+   
+}
+.form-label{
+  margin-bottom: 0;
+}
+.form-check {
+  margin-top: 10px;
+}
+.label{
+  margin-top:10px;
+  margin-bottom: 0;
+}
+.booking-Check-form {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.custom-hr{
+  border: 2px solid orange;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booking-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif ;
+  font-weight:normal;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+.li-variable {
+  margin-left: 10rem; /* Adjust the value as needed for the desired spacing */
+}
+.li-label{
+  margin-right: 13rem; 
 }
