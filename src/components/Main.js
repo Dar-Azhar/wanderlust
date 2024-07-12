@@ -34,9 +34,10 @@ function Main() {
                   Embark on an unforgettable adventure with our Srinagar-Gulmarg
                   tour package.
                 </p>
-                <a href="#" className="btn btn-primary">
+
+                <button className="btn btn-primary" >
                   Check Details
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -58,9 +59,9 @@ function Main() {
                   Get ready for the journey of a lifetime with 4 nights and 5
                   days of excitement.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <button className="btn btn-primary">
                   Check Details
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -82,9 +83,9 @@ function Main() {
                   Get lost in the enchanting meadows, rivers, and glaciers of
                   Sonmarg
                 </p>
-                <a href="#" className="btn btn-primary">
+                <button className="btn btn-primary" >
                   Check Details
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -106,11 +107,11 @@ function Main() {
               <div className="card-body">
                 <h5 className="card-title">Srinagar-Yusmarg</h5>
                 <p className="card-text">
-                Enjoy luxury accommodations and personalized service throughout your journey.
+                  Enjoy luxury accommodations and personalized service throughout your journey.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <button className="btn btn-primary" >
                   Check Details
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -132,9 +133,9 @@ function Main() {
                   Prepare for thrilling outdoor activities, including trekking
                   and fishing.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <button className="btn btn-primary" >
                   Check Details
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -156,9 +157,9 @@ function Main() {
                   Don't miss the opportunity to experience Sonmarg's tranquility
                   and charm.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <button className="btn btn-primary" >
                   Check Details
-                </a>
+                </button>
               </div>
             </div>
           </div>

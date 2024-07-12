@@ -52,13 +52,11 @@ function Checkbooking() {
   const deleteBooking = async () => {
     try {
       const apiUrl = `http://127.0.0.1:8000/booking/${clientData.id}/`;
-      const response = await axios.delete(apiUrl);
+      await axios.delete(apiUrl);
       setDeleteAlert(true)
       
-      // You can update the state or perform any necessary actions after a successful deletion.
     } catch (error) {
       console.error("Failed to delete booking:", error.response.data);
-      // Handle the error (e.g., show an error message to the user).
     }
   };
   // Function to update a booking
