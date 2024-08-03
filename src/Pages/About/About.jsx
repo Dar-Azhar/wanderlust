@@ -22,9 +22,9 @@ export const About = () => {
     <Layout>
       <main>
         <HeroSection />
-        <div class="about-section">
+        <div className="about-section">
           <img src={about} alt="A guy walking in snow" />
-          <div class="text">
+          <div className="text">
             <h2>Welcome to WanderLust</h2>
             <p>
               Welcome to our world of exploration and adventure! At WanderLust, we are passionate about creating extraordinary travel experiences that ignite your sense of wanderlust and leave you with cherished memories that last a lifetime.
@@ -55,16 +55,16 @@ export const About = () => {
           </div>
         </div>
 
-        <div class="registration-affiliation">
+        <div className="registration-affiliation">
           <h1>Our Registration & Affiliation</h1>
-          <div class="scroll-container">
-            <div class="scroll-content">
-              <div class="item"><img src={affiliation1} alt="" /></div>
-              <div class="item"><img src={affiliation2} alt="" /></div>
-              <div class="item"><img src={affiliation3} alt="" /></div>
-              <div class="item"><img src={affiliation4} alt="" /></div>
-              <div class="item"><img src={affiliation5} alt="" /></div>
-              <div class="item"><img src={affiliation6} alt="" /></div>
+          <div className="scroll-container">
+            <div className="scroll-content">
+              <div className="item"><img src={affiliation1} alt="" /></div>
+              <div className="item"><img src={affiliation2} alt="" /></div>
+              <div className="item"><img src={affiliation3} alt="" /></div>
+              <div className="item"><img src={affiliation4} alt="" /></div>
+              <div className="item"><img src={affiliation5} alt="" /></div>
+              <div className="item"><img src={affiliation6} alt="" /></div>
             </div>
           </div>
         </div>

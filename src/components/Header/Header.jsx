@@ -65,10 +65,10 @@ useEffect(() => {
           <span className="nav-toggle-icon"><img src={menu} alt="hamburger" /></span>
         </button>
         <ul className={`nav-list ${isNavOpen ? 'nav-list-active' : ''}`} id='nav-list'>
-          <li className="li"><NavLink to="/" activeClassName="active">Home</NavLink></li>
-          <li className="li"><NavLink to="/about" activeClassName="active">About Us</NavLink></li>
-          <li className="li"><NavLink to="/contact" activeClassName="active">Contact Us</NavLink></li>
-          <li className="li"><NavLink to="/booking" activeClassName="active">Booking</NavLink></li>
+          <li className="li"><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}> Home</NavLink></li>
+          <li className="li"><NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')} >About Us</NavLink></li>
+          <li className="li"><NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')} >Contact Us</NavLink></li>
+          <li className="li"><NavLink to="/booking" className={({ isActive }) => (isActive ? 'active' : '')} >Booking</NavLink></li>
           
         </ul>
       </nav>
