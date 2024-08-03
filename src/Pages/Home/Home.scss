@@ -53,10 +53,10 @@ main {
         }
 
         .why-choose-us {
-
+            padding: unset;
             .card2-container {
                 flex-direction: column;
-                padding: 2em 3em;
+                padding: 2em;
             }
 
         }
@@ -64,7 +64,7 @@ main {
         .testimonial-section{
             .testimonial-container{
                 flex-direction: column;
-                padding: 2em 4em;
+                padding: 2em;
             }
         }
     }

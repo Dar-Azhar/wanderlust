@@ -8,7 +8,7 @@ export const HeroSection = (props) => {
                 {props.slides.map((slide, index) => (
                     <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                         <img src={slide.img} className="d-block w-100" alt={`Slide ${index + 1}`} />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-md-block">
                             <h5 className="animated-text">{slide.title}</h5>
                             <p className="animated-text">{slide.description}</p>
                         </div>

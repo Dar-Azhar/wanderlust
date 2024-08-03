@@ -29,6 +29,7 @@ export function Booking() {
   const onSubmit = (data) => {
     // Define the API endpoint URL
     const apiUrl = 'https://wanderlust.up.railway.app/booking/';
+    alert("Your booking has been done!")
     axios.post(apiUrl, data)
       .then((response) => {
         setShowAlert(true)
