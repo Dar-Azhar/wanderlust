@@ -1,0 +1,20 @@
+@import '../../index.css';
+
+.reason-card{
+    text-align: center;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transform: scale(1.05); 
+        opacity: 0.9;
+
+    }
+    img{
+        width: 4em;
+    }
+    h3{
+        color: var(--clr-primary);
+    }
+}

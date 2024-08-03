@@ -1,0 +1,98 @@
+@import '../../index.css';
+
+header {
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    nav {
+        .nav-toggle {
+            display: none; // Hide toggle button by default
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 25px;
+
+        .active {
+            border-bottom: 2px solid var(--clr-light);
+            color: var(--clr-light);
+        }
+
+        li {
+            list-style: none;
+            font-weight: var(--fw-normal);
+            font-size: 1.5rem;
+
+            a {
+                text-decoration: none;
+                color: var(--clr-primary);
+                &:hover {
+                    color: var(--clr-light);
+                    font-weight: var(--fw-bold);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 0.5em 1em;
+        min-width: 1%;
+    }
+
+    .nav {
+        position: relative;
+
+        .nav-toggle {
+            display: block; // Show toggle button on mobile
+            background: var(--clr-primary);
+            border: none;
+            border-radius: 10px;
+
+            .nav-toggle-icon {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+        .nav-list {
+            display: none; // Hide by default
+            background-color: var(--clr-dark);
+            color: var(--clr-light);
+            margin-top: 1em;
+            position: absolute;
+            right: -15px;
+            top: 34px;
+            padding: 1em 4em;
+            flex-direction: column;
+            gap: 0;
+
+            li {
+                width: max-content;
+            }
+
+            // Apply display when active
+            &.nav-list-active {
+                display: flex; // Show when active
+            }
+
+            .li {
+                margin: 10px 0;
+            }
+
+            .li a:hover {
+                border-bottom: 3px solid var(--clr-primary);
+            }
+        }
+    }
+}

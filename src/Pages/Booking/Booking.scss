@@ -1,0 +1,87 @@
+@import '../../index.css';
+
+.form-outer-container {
+    height: 100%;
+    background-color: #54585a34;
+    overflow: hidden;
+
+    .row {
+        margin-right: unset !important;
+
+        .form-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+
+            .form-content {
+                position: relative;
+                text-align: center;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                align-items: center;
+                padding: 60px;
+
+                h3 {
+                    color: #fff;
+                    text-align: left;
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    color: #fff;
+                    text-align: left;
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    margin-bottom: 30px;
+                }
+
+                .form-container {
+                    height: 100%;
+                    background-color: #152733;
+                    overflow: hidden;
+                }
+
+                .form-items {
+                    border: 3px solid #fff;
+                    padding: 40px;
+                    display: inline-block;
+                    width: 100%;
+                    color: var(--clr-light);
+                    min-width: 600px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                    text-align: left;
+                    -webkit-transition: all 0.4s ease;
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+    }
+}
+.inp-field{
+    margin-bottom: 1.25rem;
+   
+}
+.form-label{
+  margin-bottom: 0;
+}
+.form-check {
+  margin-top: 10px;
+}
+.label{
+  margin-top:10px;
+  margin-bottom: 0;
+}

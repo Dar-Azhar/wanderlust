@@ -1,0 +1,23 @@
+@import '../../index.css';
+
+.testimonials{
+    background-color: #F7F7F7;
+    color: var(--clr-text-dark);
+    padding: 1em;
+    cursor: pointer;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transform: scale(1.05); 
+        opacity: 0.9;
+    }
+    h3{
+        color: var(--clr-primary) !important;
+    }
+    img{
+        width: 5em;
+    }
+}
+.testimonial-container > :nth-child(2) {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0 2em;
+}

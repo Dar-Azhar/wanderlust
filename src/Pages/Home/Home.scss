@@ -1,0 +1,73 @@
+@import '../../index.css';
+
+
+main {
+    h1 {
+        padding-top: 2em;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 70px;
+        padding: 3em 10em;
+    }
+
+    .why-choose-us {
+        padding: 2em;
+
+        h1 {
+            text-align: center;
+        }
+
+        .card2-container {
+            display: flex;
+            padding: 2em 10em;
+            gap: 10px;
+        }
+    }
+
+    .testimonial-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .testimonial-container {
+            display: flex;
+            padding: 2em 10em;
+            gap: 25px;
+            text-align: center;
+
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+
+        .card-container {
+            grid-template-columns: 1fr;
+            padding: 3em 4em;
+        }
+
+        .why-choose-us {
+
+            .card2-container {
+                flex-direction: column;
+                padding: 2em 3em;
+            }
+
+        }
+
+        .testimonial-section{
+            .testimonial-container{
+                flex-direction: column;
+                padding: 2em 4em;
+            }
+        }
+    }
+
+
+}

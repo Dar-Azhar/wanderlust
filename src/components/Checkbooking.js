@@ -40,9 +40,7 @@ function Checkbooking() {
       setFormSubmitted(true);
       setShowAlert(false)
 
-      // Handle the response data here, you can update your UI with the data
     } catch (error) {
-      // Handle any errors here
       console.error("Error fetching data:", error);
       setShowAlert(true)
     }

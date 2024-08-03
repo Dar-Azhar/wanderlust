@@ -85,7 +85,7 @@ footer {
 
   
 @media (min-width: 576px) {
-  photo-container{
+  .photo-container{
     height: 300px; 
     width: 100px;
   }
@@ -199,9 +199,7 @@ footer {
     margin-bottom: 5px;
 }
 
-.form-content h3.form-title {
-    margin-bottom: 30px;
-}
+
 
 .form-content p {
     color: #fff;
@@ -211,7 +209,9 @@ footer {
     line-height: 20px;
     margin-bottom: 30px;
 }
-
+.form-content h3.form-title {
+  margin-bottom: 30px;
+}
 
 .form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
     color: #fff;

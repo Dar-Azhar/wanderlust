@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import './Booking.scss'
 import { useForm } from "react-hook-form";
 import classNames from "classnames";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Alert } from "react-bootstrap";
+import { Layout } from "../../components/Layout";
 
-function Booking() {
+export function Booking() {
   const {
     register,
     handleSubmit,
@@ -25,17 +27,14 @@ function Booking() {
 
 
   const onSubmit = (data) => {
-    const apiUrl = 'http://127.0.0.1:8000/booking/';
-
-    axios
-      .post(apiUrl, data)
+    // Define the API endpoint URL
+    const apiUrl = 'https://wanderlust.up.railway.app/booking/';
+    axios.post(apiUrl, data)
       .then((response) => {
-
         setShowAlert(true)
         reset();
       })
       .catch((error) => {
-        // Handle error from the backend
         console.error('Booking failed:', error.response.data);
       });
   };
@@ -79,7 +78,7 @@ function Booking() {
   ];
 
   return (
-    <div className="">
+    <Layout>
       <div className="form-body form-outer-container ">
         <div className="row">
           <div className="form-holder">
@@ -318,8 +317,8 @@ function Booking() {
       </div>
 
 
-    </div>
+    </Layout>
   );
 }
 
-export default Booking;
+
