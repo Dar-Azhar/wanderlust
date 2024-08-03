@@ -16,12 +16,34 @@ import affiliation4 from '../../assets/images/msme.jpg'
 import affiliation5 from '../../assets/images/nidhi.jpg'
 import affiliation6 from '../../assets/images/Ministry-of-tourism.jpg'
 
+import one  from '../../assets/images/About1.jpg'
+import two  from '../../assets/images/About2.jpg'
+import three from '../../assets/images/About3.jpg'
+
+
+const aboutUsSlides = [
+  {
+      img: one,
+      title: "Our Journey",
+      description: "Discover how we started and our passion for travel.",
+  },
+  {
+      img: two,
+      title: "Our Mission",
+      description: "To provide unforgettable travel experiences to our clients.",
+  },
+  {
+      img: three,
+      title: "Meet the Team",
+      description: "Get to know the dedicated team behind Fabulous Kashmir.",
+  },
+];
 
 export const About = () => {
   return (
     <Layout>
       <main>
-        <HeroSection />
+        <HeroSection slides= {aboutUsSlides}/>
         <div className="about-section">
           <img src={about} alt="A guy walking in snow" />
           <div className="text">

@@ -5,6 +5,30 @@ import './Contact.scss';
 import axios from 'axios';
 import contactImg from '../../assets/images/contact-us.png'; 
 
+import one from '../../assets/images/Contact1.jpg'
+import two from '../../assets/images/contact3.jpg'
+import three from '../../assets/images/contact2.jpg'
+
+
+const contactUsSlides = [
+  {
+      img: two,
+      title: "Get in Touch",
+      description: "We'd love to hear from you! Reach out for any inquiries.",
+  },
+  {
+      img: three,
+      title: "Follow Us",
+      description: "Stay connected with us through social media.",
+  },
+  {
+      img: one,
+      title: "Visit Us",
+      description: "Find us at our office for personalized assistance.",
+  },
+];
+
+
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -35,7 +59,7 @@ export const Contact = () => {
   return (
     <Layout>
       <main>
-        <HeroSection />
+        <HeroSection slides = {contactUsSlides} />
         <div className="contact-section">
           <div className="left">
             <h2>We're Here to Help You!</h2>

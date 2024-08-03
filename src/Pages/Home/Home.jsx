@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.scss'
+import '../../components/Hero/Hero.scss'; 
 import { Layout } from '../../components/Layout'
 import { PackageCard } from '../../components/PackageCard/PackageCard'
 import { HeroSection } from '../../components/Hero/Hero'
@@ -14,18 +15,36 @@ import sonamarg from '../../assets/images/Sonmarg.jpg'
 import yusmarg from '../../assets/images/Yusmarg.jpg'
 import bhaderwah from '../../assets/images/Bhaderwah.jpg'
 import kupwara from '../../assets/images/Kupwara.jpg'
+import dal from '../../assets/images/Dal Lake.jpg'
 import price from '../../assets/images/price-tag.png'
 import award from '../../assets/images/award.png'
 import coverage from '../../assets/images/internet.png'
 import testimonial1 from '../../assets/images/testimonial-1.png'
 
 
+const slides = [
+  {
+      img: dal,
+      title: "Welcome to WanderLust Travels",
+      description: "Discover the beauty of Kashmir with our tailored travel packages."
+  },
+  {
+      img: yusmarg,
+      title: "Explore Yusmarg",
+      description: "Experience the tranquil landscapes of Yusmarg, a hidden gem in Kashmir."
+  },
+  {
+      img: pahalgam,
+      title: "Adventures in Pahalgam",
+      description: "Thrilling adventures await you in Pahalgam, the adventure capital of Kashmir."
+  },
+];
 
 export const Home = () => {
   return (
     <Layout>
       <main>
-        <HeroSection />
+        <HeroSection slides = {slides}/>
         <h1 className="text-center">
           Select Your Best Package <br /> For Your Travel
         </h1>
