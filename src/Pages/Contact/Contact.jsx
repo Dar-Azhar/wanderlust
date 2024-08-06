@@ -3,7 +3,7 @@ import { Layout } from '../../components/Layout';
 import { HeroSection } from '../../components/Hero/Hero';
 import './Contact.scss';
 import axios from 'axios';
-import contactImg from '../../assets/images/contact-us.png'; 
+import contactImg from '../../assets/images/contact-us.png';
 
 import one from '../../assets/images/Contact1.jpg'
 import two from '../../assets/images/contact3.jpg'
@@ -12,19 +12,19 @@ import three from '../../assets/images/contact2.jpg'
 
 const contactUsSlides = [
   {
-      img: two,
-      title: "Get in Touch",
-      description: "We'd love to hear from you! Reach out for any inquiries.",
+    img: two,
+    title: "Get in Touch",
+    description: "We'd love to hear from you! Reach out for any inquiries.",
   },
   {
-      img: three,
-      title: "Follow Us",
-      description: "Stay connected with us through social media.",
+    img: three,
+    title: "Follow Us",
+    description: "Stay connected with us through social media.",
   },
   {
-      img: one,
-      title: "Visit Us",
-      description: "Find us at our office for personalized assistance.",
+    img: one,
+    title: "Visit Us",
+    description: "Find us at our office for personalized assistance.",
   },
 ];
 
@@ -59,7 +59,7 @@ export const Contact = () => {
   return (
     <Layout>
       <main>
-        <HeroSection slides = {contactUsSlides} />
+        <HeroSection slides={contactUsSlides} />
         <div className="contact-section">
           <div className="left">
             <h2>We're Here to Help You!</h2>
@@ -100,6 +100,16 @@ export const Contact = () => {
             </form>
           </div>
         </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12824.999627990826!2d74.83129690803663!3d34.10983573090378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e185983f7fee09%3A0x2cceddb2f36b6bfd!2sAshai%20Bagh%2C%20Srinagar%20190006!5e0!3m2!1sen!2sin!4v1722938788830!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          title='A google map pointing towards our location at Ashai Bagh Hazratbal Location'
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
       </main>
     </Layout>
   );

@@ -15,18 +15,30 @@ export function Header() {
     setIsNavOpen(!isNavOpen)
   }
 
-useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setIsNavOpen(false);
-    }
-  };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsNavOpen(false);
+      }
+    };
 
-  document.addEventListener("mousedown", handleClickOutside);
-  return () => {
-    document.removeEventListener("mousedown", handleClickOutside);
-  };
-}, []);
+    const handleScrollDisable = () => {
+      if (isNavOpen) {
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+      } else {
+        document.body.style.overflow = 'auto'; // Enable scrolling
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    handleScrollDisable();
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = 'auto'; // Ensure scrolling is enabled when the component is unmounted
+    };
+  }, [isNavOpen]);
+
 
   return (
     // <>
@@ -69,7 +81,8 @@ useEffect(() => {
           <li className="li"><NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')} >About Us</NavLink></li>
           <li className="li"><NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')} >Contact Us</NavLink></li>
           <li className="li"><NavLink to="/booking" className={({ isActive }) => (isActive ? 'active' : '')} >Booking</NavLink></li>
-          
+          <li className="li"><NavLink to="/blogs" className={({ isActive }) => (isActive ? 'active' : '')} >Blogs</NavLink></li>
+          <li className="li"><NavLink to="/logIn" className={({ isActive }) => (isActive ? 'active' : '')} >Login</NavLink></li>
         </ul>
       </nav>
     </header>

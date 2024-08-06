@@ -1,28 +1,190 @@
 @import '../../index.css';
 
-footer{
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    padding: .8em 0;
-    text-align: center;
-    font-size: 1.5rem;
-    .developer{
-        font-size: .7rem;
+// footer{
+//     background-color: var(--clr-dark);
+//     color: var(--clr-light);
+//     padding: .8em 0;
+//     text-align: center;
+//     font-size: 1.5rem;
+//     .developer{
+//         font-size: .7rem;
 
-        span{
-            color:var(--clr-primary);
-            cursor: pointer;
-            &:hover{
-                color: var(--clr-light);
+//         span{
+//             color:var(--clr-primary);
+//             cursor: pointer;
+//             &:hover{
+//                 color: var(--clr-light);
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 768px){
+//     footer{
+//         p{
+//             padding: 0 2em;
+//         }
+
+//     }
+// }
+
+footer {
+    background-color: var(--clr-dark);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin: 10px;
+        text-align: center;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        .contact p,
+        .socials a {
+            margin: 5px 0;
+        }
+
+        ul {
+            text-decoration: none;
+            list-style: none;
+            padding-left: unset;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+           
+        li {
+            a {
+                text-decoration: none; // Ensure links have no underline
+                color: inherit; // Use the parent color
+                transition: color 0.3s; // Smooth transition for hover effect
+
+                &:hover {
+                    color: var(--clr-primary);
+                    font-weight: var(--fw-bold);
+                }
+            }
+        }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .mailing-section {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: stretch;
+
+        .mailing {
+            display: flex;
+            flex-direction: column;
+            padding-right: 2.5em;
+
+            .input-group-email {
+
+                input {
+                    margin-top: 10px;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+
+                button {
+                    border: none;
+                    background-color: var(--clr-primary);
+                    color: var(--clr-light);
+                    padding: .625em .8em;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: var(--clr-primary);
+                        border: 1px solid var(--clr-primary);
+                    }
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            padding-left: 4.5em;
+        }
+    }
+
+    hr {
+        width: 100%;
+        border: none;
+        height: 2px;
+        background-color: white;
+    }
+
+    .copyRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .developer {
+            font-size: .7rem;
+
+            span {
+                color: var(--clr-primary);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--clr-light);
+                }
             }
         }
     }
 }
-@media (max-width: 768px){
-    footer{
-        p{
-            padding: 0 2em;
+
+@media (max-width: 768px) {
+    footer {
+        .mailing-section {
+            gap: 20px;
+
+            .mailing {
+                padding-right: unset;
+
+                .input-group-email {
+                    display: flex;
+                    align-items: baseline;
+
+                    button {
+                        padding: .5em;
+                        height: 44px;
+                    }
+                }
+            }
+
+            .socials {
+                width: 100%;
+                padding-left: unset;
+                justify-content: center;
+            }
         }
-       
     }
 }

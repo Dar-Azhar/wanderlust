@@ -53,6 +53,9 @@
     }
 }
 @media (max-width: 768px){
+    .carousel-item img{
+        object-position: right;
+    }
     .carousel-caption{
 
         h5{

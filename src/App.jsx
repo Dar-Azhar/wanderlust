@@ -4,6 +4,8 @@ import { Home } from './Pages/Home/Home';
 import { About } from './Pages/About/About';
 import { Contact } from './Pages/Contact/Contact';
 import { Booking } from './Pages/Booking/Booking';
+import { Login } from './Pages/Login/Login';
+import { Blogs } from './Pages/Blogs/Blogs';
 // import Checkbooking from "./components/Checkbooking"; // Uncomment if needed
 
 // import "./App.css";
@@ -28,6 +30,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
         {/* <Route path="/check-booking" element={<Checkbooking />} /> */}
+        <Route path="/logIn" element={<Login />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </Router>
   );
