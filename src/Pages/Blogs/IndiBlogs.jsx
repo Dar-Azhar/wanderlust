@@ -94,6 +94,6 @@ export const IndiBlogs = () => {
                     <p>Blog not found!</p>
                 )}
             </main>
-        </Layout>
+        </Layout> 
     );
 }
