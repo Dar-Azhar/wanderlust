@@ -8,6 +8,7 @@ import './Header.scss'
 
 
 export function Header() {
+  const name = localStorage.getItem("name")
   const dropdownRef = useRef(null)
   const navigate = useNavigate()
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -82,7 +83,7 @@ export function Header() {
           <li className="li"><NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')} >Contact Us</NavLink></li>
           <li className="li"><NavLink to="/booking" className={({ isActive }) => (isActive ? 'active' : '')} >Booking</NavLink></li>
           <li className="li"><NavLink to="/blogs" className={({ isActive }) => (isActive ? 'active' : '')} >Blogs</NavLink></li>
-          <li className="li"><NavLink to="/logIn" className={({ isActive }) => (isActive ? 'active' : '')} >Login</NavLink></li>
+          <li className="login-btn"><NavLink to="/logIn" className={({ isActive }) => (isActive ? 'active' : '')} >{name? name:"Login"}</NavLink></li>
         </ul>
       </nav>
     </header>

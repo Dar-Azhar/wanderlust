@@ -55,7 +55,7 @@ export const About = () => {
               WanderLust Travels is a premier travel agency nestled in the heart of the picturesque Kashmir Valley. Since our inception in 2010, we've been committed to crafting unparalleled travel experiences, driven by our passion for showcasing the splendor of Kashmir to the world.
             </p>
             <p>
-              Led by seasoned industry professionals Mr. Danish Nabi and Mr. Mumin Wani, our dedicated team brings a wealth of expertise and a deep-rooted love for travel. With years of collective experience in the tourism sector, we pride ourselves on delivering top-notch services, personalized attention, and a deep understanding of travelers' needs.
+              Led by seasoned industry professionals Mr. Azhar Ali and Mr. Syed Abrar, our dedicated team brings a wealth of expertise and a deep-rooted love for travel. With years of collective experience in the tourism sector, we pride ourselves on delivering top-notch services, personalized attention, and a deep understanding of travelers' needs.
             </p>
             <p>
               Our mission is to curate journeys that transcend the ordinary, offering a seamless blend of cultural immersion, adventure, and relaxation. Whether you seek a tranquil retreat amidst the serene landscapes, adrenaline-pumping adventures, or a cultural rendezvous, we tailor our offerings to exceed expectations.

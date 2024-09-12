@@ -1,8 +1,10 @@
 @import '../../index.css';
-.blogs{
+.blogs-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2em;
+    margin: 0 auto;
   }

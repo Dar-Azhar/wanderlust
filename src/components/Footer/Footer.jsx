@@ -18,7 +18,7 @@ export function Footer() {
 
           <p><strong>Head Office</strong> : Hazratbal Rd, Ashai Bagh, Srinagar Jammu & Kashmir India -190003</p>
           <p><strong>Email</strong> : wanderlust@gmail.com</p>
-          <p><strong>Contact</strong>+91-7051303011</p>
+          <p><strong>Contact</strong>+91-6006398787</p>
         </div>
 
       </div>

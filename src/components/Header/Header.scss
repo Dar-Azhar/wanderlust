@@ -43,6 +43,16 @@ header {
                 }
             }
         }
+        .login-btn a{
+            background-color: var(--clr-primary);
+            color: var(--clr-light) !important;
+            padding: .1em 1.5em .28em 1.5em;
+            border-radius: 50px;
+            &:hover{
+                background-color: #da9c29;
+                font-weight: var(--fw-normal);
+            }
+        }
     }
 }
 

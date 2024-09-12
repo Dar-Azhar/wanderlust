@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Layout } from '../../components/Layout';
 import { HeroSection } from '../../components/Hero/Hero';
 import './Contact.scss';
-import axios from 'axios';
+import axios from '../../axios';
 import contactImg from '../../assets/images/contact-us.png';
 
 import one from '../../assets/images/Contact1.jpg'
@@ -47,7 +47,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://wanderlust.up.railway.app/contact/', formData);
+      await axios.post('/contact/', formData);
       alert('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {

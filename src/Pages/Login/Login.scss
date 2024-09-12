@@ -1,10 +1,109 @@
 @import '../../index.css';
 
-.login{
+main {
+  .login {
+    background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2em 0;
+
+    .left {
+      h1 {
+        padding: unset;
+        color: var(--clr-primary);
+      }
+
+      img {
+        width: 70%;
+      }
+    }
+
+    .right {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 10px;
+      padding: 4em;
+      background-color: var(--clr-light);
+
+      h2 {
+        color: var(--clr-primary);
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        border-radius: 10px;
+
+        .error-message {
+          color: red;
+          margin-top: 10px;
+        }
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          label {
+            margin-bottom: 0.5em;
+          }
+
+          input {
+            padding: 0.5em;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            outline: none;
+          }
+        }
+
+        .submit-button {
+          padding: 0.7em;
+          background-color: var(--clr-primary);
+          color: var(--clr-light);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgb(255, 186, 57);
+          }
+        }
+        .forgotPassword{
+          color: var(--clr-primary);
+          &:hover{
+            color: inherit;
+          }
+        }
+        .register-link {
+          a {
+            color: var(--clr-primary);
+
+            &:hover {
+              color: var(--clr-dark);
+            }
+          }
+        }
+      }
+    }
   }
-  
+}
+
+@media (max-width: 768px) {
+  main {
+    .login {
+      .left {
+        text-align: center;
+      }
+
+      .right {
+        padding: 4em 2em;
+
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
